@@ -13,10 +13,11 @@ against the predictions, whatever they show. A disagreement is a question for th
 |---|---|---|---|
 | [kenya-aflatoxin 0.1.0](docs/kenya-aflatoxin-0.1.0.md) | Hoffmann et al. 2025, PLOS ONE 20(11): e0336687: aflatoxin in 1,255 maize-flour samples, ten Kenyan towns, 2021 | IFPRI, [doi:10.7910/DVN/XGNOD4](https://doi.org/10.7910/DVN/XGNOD4) (CC BY 4.0) | pre-registered 2026-11-11, 29 checks |
 | [senegal-groundnut 0.1.0](docs/senegal-groundnut-0.1.0.md) | Feed the Future Food Safety Innovation Lab (Purdue, ISRA) pilot: aflatoxins, coliforms and Enterobacteriaceae in groundnuts stored by 250 households, Peanut Basin, Senegal, 2020 | Bauchet 2021, [doi:10.7910/DVN/ACKHW5](https://doi.org/10.7910/DVN/ACKHW5) (CC0 1.0) | pre-registered 2026-11-11, 12 checks |
+| [kenya-aflatoxin-rct 0.1.0](docs/kenya-aflatoxin-rct-0.1.0.md) | Hoffmann, Jones and Leroy 2018, BMJ Global Health 3(6): e000983: cluster randomised trial of aflatoxin-free maize and child growth, 56 villages, Meru and Tharaka-Nithi, 2013-2016 | IFPRI 2019, [doi:10.7910/DVN/OHIOYR](https://doi.org/10.7910/DVN/OHIOYR) (CC BY 4.0) | pre-registered 2026-11-11, 25 checks |
 
-Run: `python -m unittest -v test_kenya_aflatoxin test_senegal_groundnut`, then
-`python kenya_aflatoxin.py --out-dir out` and `python senegal_groundnut.py --out-dir out`
-(Python 3.10+, standard library only).
+Run: `python -m unittest -v test_kenya_aflatoxin test_senegal_groundnut test_kenya_aflatoxin_rct`, then
+`python kenya_aflatoxin.py --out-dir out`, `python senegal_groundnut.py --out-dir out` and
+`python kenya_aflatoxin_rct.py --out-dir out` (Python 3.10+, standard library only).
 
 Related: 75 checked items in Canada's open food-chemistry data, in
 [munimtechnologies/spice-lead-recalls](https://github.com/munimtechnologies/spice-lead-recalls).
