@@ -1,6 +1,7 @@
 # Candidate datasets for open-food-safety-check
 
-Last updated: 2026-11-12 (third scouting pass: Zenodo and Dryad). Text licence: CC BY 4.0.
+Last updated: 2026-11-12 (third scouting pass: Zenodo and Dryad; later the same day, an anonymous download route
+for the wheat DON paper's supplement). Text licence: CC BY 4.0.
 
 This page lists every paper-and-data pair considered for a check in this repository, including the
 ones that were not used and why. A check is only run when (1) the data are openly downloadable without
@@ -26,16 +27,23 @@ paper and the codebook before any data values are read.
 ## Parked: open licence and open paper, but the files cannot be downloaded by an automated job
 
 On 2026-11-12 Dryad answered an anonymous request to its file-download API with HTTP 401, and its
-website's file link returned HTTP 403 to an automated client. Public reports of the 401 ("must have current
-bearer token") go back to at least August 2026. A Dryad API token is a
+website's file link returned HTTP 403 to an automated client. A second anonymous request later that day
+(the README of doi:10.5061/dryad.d2547d8bx, file 4202051) again returned HTTP 401. Public reports of the
+401 ("must have current bearer token") go back to at least August 2026. A Dryad API token is a
 personal credential, and this repository's jobs run in sealed containers without credentials, so these pairs
 are parked for now. Metadata and file lists are still public, so the entries below record what was confirmed
 on 2026-11-12. A person could download the files in a browser and the job could then check them against the
 sizes and SHA-256 digests that Dryad lists.
 
+A partial route exists for papers in PubMed Central's open-access subset: PMC's Open Access dataset on AWS
+(https://pmc-oa-opendata.s3.amazonaws.com/, no account needed) serves each article's full text and
+supplementary files, and lists an MD5 for each file in a per-article JSON record (for example
+PMC12506668.1/PMC12506668.1.json). It works when the PMC and publisher web pages refuse automated readers.
+It only helps when the values a check needs are in the journal supplement, not in a separate Dryad deposit.
+
 | Candidate | Notes (checked 2026-11-12) |
 |---|---|
-| Wheat deoxynivalenol (DON), genomic and hyperspectral prediction: Concepcion, Noble, Thompson, Dong, Olson 2025, G3 15(10) jkaf176, doi:10.1093/g3journal/jkaf176 (PMC12506668, CC BY); data doi:10.5061/dryad.d2547d8bx (CC0, about 110 MB: three VIS-NIR phenomic CSV files for 2021, 2022 and both years, a 3,117 x 15,456 imputed SNP matrix and a README) | The strongest candidate found so far. The paper can be read openly in Europe PMC, the data are CC0, and the prediction comparison (visible-band phenomic vs genomic vs blended models) is a published, checkable claim. Blocked only by the Dryad download rule above. Whether the CSV files carry the DON phenotypes was not confirmed, because the README itself cannot be downloaded without a token. |
+| Wheat deoxynivalenol (DON), genomic and hyperspectral prediction: Concepcion, Noble, Thompson, Dong, Olson 2025, G3 15(10) jkaf176, doi:10.1093/g3journal/jkaf176 (PMC12506668, CC BY); data doi:10.5061/dryad.d2547d8bx (CC0, version 379172, 110,287,108 bytes in five files: 2021_Phenomic_Data_VIS-NIR.csv, 2022_Phenomic_Data_VIS-NIR.csv, 2021-2022_Across_Years_Phenomic_Data_VIS-NIR.csv, a 3,117 x 15,456 imputed SNP matrix of 107,488,221 bytes, and a README) | The strongest candidate found so far. The paper can be read openly in Europe PMC, the data are CC0, and the prediction comparison (visible-band phenomic vs genomic vs blended models) is a published, checkable claim. The paper's data statement says the DON values are in Supplementary Tables 2 to 4 (BLUEs for the training genotypes), not on Dryad. That supplement is one zip file (jkaf176_supplementary_data.zip, 963,622 bytes; PMC lists MD5 943fda4e1996af4984f4ecc16f3202c1), and on 2026-11-12 it downloaded without login from PMC's Open Access dataset on AWS (path PMC12506668.1/). Its contents were not opened; a check would be pre-registered first. So the DON half is reachable by an automated job, but the genotype and spectral halves are still Dryad-only and blocked by the download rule above. |
 | Maize yield and aflatoxin combining ability, southeastern USA: Knoll, Perla, Krakowsky, Guo 2023, Crop Science 63:2793-2806, doi:10.1002/csc2.21050 (Unpaywall: hybrid open access, CC BY); data doi:10.5061/dryad.ttdz08m44 (CC0; one .xlsx file, 354 KB, plus a README) | Two NC Design II experiments at Tifton, GA (18 lines x 6 testers; 13 lines x 10 testers); the abstract gives aflatoxin H2 = 0.09 and 0.27. Blocked by the Dryad download rule, and the Wiley article page returns HTTP 403 to automated readers. The USDA Ag Data Commons copy (figshare article 29937185) is only a link to the Dryad record. |
 | Maize combining ability in expired-PVP lines and aflatoxin resistance: Knoll, Jeffers, Babiker 2026, Crop Science, doi:10.1002/csc2.70364 (Unpaywall: hybrid open access, public domain); data doi:10.5061/dryad.6djh9w1jc (CC0, about 430 KB) | 32 ex-PVP lines x 6 USDA-ARS lines in four environments. Same blockers as the 2023 pair (Dryad download rule; Wiley page not readable by tools). |
 
