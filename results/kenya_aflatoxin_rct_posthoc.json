@@ -1,0 +1,544 @@
+{
+ "arm_counts": {
+  "by_treatment_wave": {
+   "0": {
+    "2": 79,
+    "3": 53,
+    "4": 134,
+    "5": 134,
+    "6": 134
+   },
+   "1": {
+    "2": 105,
+    "3": 85,
+    "4": 160,
+    "5": 168,
+    "6": 170
+   }
+  },
+  "no_data_rows": {},
+  "presence": {
+   "0": {
+    "bmo_age": 534,
+    "bmo_height": 121,
+    "bmo_serumafb": 528,
+    "ech_haz06": 413,
+    "ech_serumafb": 383,
+    "mch_haz06": 315,
+    "mch_serumafb": 289
+   },
+   "1": {
+    "bmo_age": 688,
+    "bmo_height": 178,
+    "bmo_serumafb": 678,
+    "ech_haz06": 531,
+    "ech_serumafb": 477,
+    "mch_haz06": 387,
+    "mch_serumafb": 354
+   }
+  }
+ },
+ "duplicate_rows": 0,
+ "id_columns": {
+  "bchildu2id": {
+   "distinct": 4,
+   "max_repeat": 7,
+   "non_missing": 13,
+   "values_repeated": 3
+  },
+  "bmotherid": {
+   "distinct": 6,
+   "max_repeat": 1139,
+   "non_missing": 1222,
+   "values_repeated": 6
+  },
+  "bmotheru2id": {
+   "distinct": 1,
+   "max_repeat": 13,
+   "non_missing": 13,
+   "values_repeated": 1
+  },
+  "echildid": {
+   "distinct": 15,
+   "max_repeat": 234,
+   "non_missing": 1171,
+   "values_repeated": 13
+  },
+  "emotherid": {
+   "distinct": 8,
+   "max_repeat": 954,
+   "non_missing": 1017,
+   "values_repeated": 6
+  },
+  "mmotherid": {
+   "distinct": 5,
+   "max_repeat": 598,
+   "non_missing": 617,
+   "values_repeated": 5
+  },
+  "svid": {
+   "distinct": 56,
+   "max_repeat": 103,
+   "non_missing": 1222,
+   "values_repeated": 56
+  }
+ },
+ "log_columns": {
+  "bmo": {
+   "by_flag": {
+    "1": {
+     "log10": 3
+    },
+    "3": {
+     "log10": 21
+    },
+    "missing": {
+     "both": 6,
+     "ln": 885,
+     "log10": 291
+    }
+   },
+   "by_treatment": {
+    "0": {
+     "both": 1,
+     "ln": 398,
+     "log10": 129
+    },
+    "1": {
+     "both": 5,
+     "ln": 487,
+     "log10": 186
+    }
+   },
+   "by_wave": {
+    "2": {
+     "log10": 181
+    },
+    "3": {
+     "both": 1,
+     "log10": 134
+    },
+    "4": {
+     "both": 4,
+     "ln": 287
+    },
+    "5": {
+     "ln": 300
+    },
+    "6": {
+     "both": 1,
+     "ln": 298
+    }
+   },
+   "counts": {
+    "both": 6,
+    "ln": 885,
+    "log10": 315
+   },
+   "mean_ln": {
+    "0": 2.673352612590885,
+    "1": 2.6241293599398596
+   },
+   "mean_log10": {
+    "0": 1.1610222878298628,
+    "1": 1.1396449008221907
+   },
+   "mean_stored_log": {
+    "0": 2.403196383777187,
+    "1": 2.30962953232638
+   },
+   "neither_examples": []
+  },
+  "ech": {
+   "by_flag": {
+    "2": {
+     "log10": 4
+    },
+    "missing": {
+     "both": 5,
+     "log10": 851
+    }
+   },
+   "by_treatment": {
+    "0": {
+     "both": 1,
+     "log10": 382
+    },
+    "1": {
+     "both": 4,
+     "log10": 473
+    }
+   },
+   "by_wave": {
+    "2": {
+     "both": 2,
+     "log10": 119
+    },
+    "3": {
+     "both": 1,
+     "log10": 91
+    },
+    "4": {
+     "both": 1,
+     "log10": 201
+    },
+    "5": {
+     "log10": 218
+    },
+    "6": {
+     "both": 1,
+     "log10": 226
+    }
+   },
+   "counts": {
+    "both": 5,
+    "log10": 855
+   },
+   "mean_ln": {
+    "0": 2.0161143024368187,
+    "1": 1.7829856299250162
+   },
+   "mean_log10": {
+    "0": 0.8755873164345327,
+    "1": 0.7743408203892289
+   },
+   "mean_stored_log": {
+    "0": 0.8755873164345325,
+    "1": 0.7743408203892288
+   },
+   "neither_examples": []
+  },
+  "mch": {
+   "by_flag": {
+    "2": {
+     "log10": 25
+    },
+    "missing": {
+     "both": 4,
+     "log10": 614
+    }
+   },
+   "by_treatment": {
+    "0": {
+     "both": 2,
+     "log10": 287
+    },
+    "1": {
+     "both": 2,
+     "log10": 352
+    }
+   },
+   "by_wave": {
+    "4": {
+     "log10": 210
+    },
+    "5": {
+     "both": 2,
+     "log10": 210
+    },
+    "6": {
+     "both": 2,
+     "log10": 219
+    }
+   },
+   "counts": {
+    "both": 4,
+    "log10": 639
+   },
+   "mean_ln": {
+    "0": 1.6604962779364754,
+    "1": 1.5354501309039175
+   },
+   "mean_log10": {
+    "0": 0.7211443707286997,
+    "1": 0.6668375190891968
+   },
+   "mean_stored_log": {
+    "0": 0.7211443707286997,
+    "1": 0.6668375190891968
+   },
+   "neither_examples": []
+  }
+ },
+ "mother_height_frames": {
+  "all_rows": {
+   "0": {
+    "mean_height": 157.70661157024793,
+    "n_height": 121,
+    "n_rows": 534
+   },
+   "1": {
+    "mean_height": 157.07303370786516,
+    "n_height": 178,
+    "n_rows": 688
+   }
+  },
+  "paper_mean_height": {
+   "0": 158.1,
+   "1": 157.47
+  },
+  "paper_table1_n": {
+   "0": 392,
+   "1": 489
+  },
+  "table1_frame_endline_laz": {
+   "0": {
+    "mean_height": 158.6305882352941,
+    "n_height": 85,
+    "n_rows": 413
+   },
+   "1": {
+    "mean_height": 157.14511278195488,
+    "n_height": 133,
+    "n_rows": 531
+   }
+  },
+  "table1_frame_not_attrited": {
+   "0": {
+    "mean_height": 158.6305882352941,
+    "n_height": 85,
+    "n_rows": 413
+   },
+   "1": {
+    "mean_height": 157.14511278195488,
+    "n_height": 133,
+    "n_rows": 531
+   }
+  },
+  "table1_frame_strict_covariates": {
+   "0": {
+    "mean_height": 158.78024691358024,
+    "n_height": 81,
+    "n_rows": 81
+   },
+   "1": {
+    "mean_height": 157.1884,
+    "n_height": 125,
+    "n_rows": 125
+   }
+  }
+ },
+ "n_rows": 1222,
+ "note": "Post hoc diagnostics, not pre-registered; they do not change any grade.",
+ "post_hoc": true,
+ "serum_flags": {
+  "endline": {
+   "flagged_with_value": [
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 15.83
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 3.22
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 4.98
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 4.77
+    }
+   ],
+   "table": {
+    "0": {
+     "1": {
+      "no_value": 8
+     },
+     "2": {
+      "value": 1
+     },
+     "missing": {
+      "no_value": 143,
+      "value": 382
+     }
+    },
+    "1": {
+     "1": {
+      "no_value": 9
+     },
+     "2": {
+      "value": 3
+     },
+     "3": {
+      "no_value": 1
+     },
+     "missing": {
+      "no_value": 201,
+      "value": 474
+     }
+    }
+   }
+  },
+  "midline": {
+   "flagged_with_value": [
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 4.76
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 7.99
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 3.99
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 4.33
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 3.99
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 3.54
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 5.32
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 4.62
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 7.24
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 2.88
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 3.66
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 3.65
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 4.53
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 5.2
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 6.97
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 3.98
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 3.75
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 4.72
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 4.3
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 4.76
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 4.77
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 4.87
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 4.88
+    },
+    {
+     "flag": 2.0,
+     "treatment": 1.0,
+     "value": 4.88
+    },
+    {
+     "flag": 2.0,
+     "treatment": 0.0,
+     "value": 4.87
+    }
+   ],
+   "table": {
+    "0": {
+     "1": {
+      "no_value": 1
+     },
+     "2": {
+      "value": 11
+     },
+     "4": {
+      "no_value": 1
+     },
+     "missing": {
+      "no_value": 111,
+      "value": 278
+     }
+    },
+    "1": {
+     "1": {
+      "no_value": 6
+     },
+     "2": {
+      "value": 14
+     },
+     "4": {
+      "no_value": 1
+     },
+     "missing": {
+      "no_value": 137,
+      "value": 340
+     }
+    }
+   }
+  }
+ },
+ "sha256": "d48ac94dc165930f2ec2dff546b31b9abc70ee28155a767ffe781a3b0504defe",
+ "sha256_matches_graded_file": true,
+ "source_url": "https://dataverse.harvard.edu/api/access/datafile/3347337",
+ "version": "0.1.0"
+}

@@ -94,16 +94,90 @@ These use the output above and the dataset's own codebook (Dataverse DDI), read 
   mothers, and R17 (computed as the natural log of the raw values) held. It matters for anyone who reuses the
   column as labelled.
 
-A short post hoc diagnostic job (`posthoc_rct.py`, labelled as post hoc and not changing any grade) is queued
-to settle the open points: which log each mother row holds, the non-detectable samples by arm, the three extra
-rows, and the mother-height miss under narrower frames. Its output will be added here.
+The bullets above were written at grading time. The post hoc job below settles three of the four open points.
+
+## Post hoc diagnostics (added 2026-11-13; not pre-registered; no grade changes)
+
+POSTHOC-MARKER: kenya-aflatoxin-rct-0.1.0-posthoc
+
+- Run: sealed job `kenya-aflatoxin-rct-posthoc-v1`, 2026-11-13 20:00-20:01 UTC, Python 3.12, standard library
+  only, on the same file (its SHA-256 matched the graded file). The 9 unit tests passed first. Code:
+  [posthoc/posthoc_rct.py](../posthoc/posthoc_rct.py); full output:
+  [results/kenya_aflatoxin_rct_posthoc.json](../results/kenya_aflatoxin_rct_posthoc.json). Category labels below
+  are from the Dataverse codebook.
+
+**R23: settled. The mother "log10" column holds log10 in survey waves 2-3 and the natural log in waves 4-6.**
+Each of the 1,206 mother rows with a serum value was classed by which log of the value the stored number
+matches (within 0.01):
+
+| wave | log10 only | ln only | both (value near 1) | neither |
+|---|---|---|---|---|
+| 2 | 181 | 0 | 0 | 0 |
+| 3 | 134 | 0 | 1 | 0 |
+| 4 | 0 | 287 | 4 | 0 |
+| 5 | 0 | 300 | 0 | 0 |
+| 6 | 0 | 298 | 1 | 0 |
+| all | 315 | 885 | 6 | 0 |
+
+No row matches neither, and the split is by wave, not by arm (both arms have both kinds). The switch falls on
+the same boundary as the midline survey, which only waves 4-6 had; that suggests the column was built in two
+batches, but it is a guess. Used as labelled, the column's arm means are 2.31 (intervention) and 2.40
+(control), between the log10 means (1.14 / 1.16) and the natural-log means (2.62 / 2.67). The child columns
+hold log10 on every row in every wave. The paper's own mother numbers (Table 1, "ln") agree with the natural log
+of the raw values (R17 held), so this affects reuse of the column, not the paper.
+
+**R22: settled. All 17 endline non-detectable samples have no serum value, and they are split almost evenly
+between arms.**
+
+| endline child serum (`ech_serumflag`) | control | intervention |
+|---|---|---|
+| 1 Non-detectable, no value | 8 | 9 |
+| 2 Insufficient volume, with value | 1 | 3 |
+| 3 Hemolysis, no value | 0 | 1 |
+| no flag, with value | 382 | 474 |
+
+Among samples with a value or a non-detectable result, the non-detectable share is 8 of 391 (2.0%) in control
+and 9 of 486 (1.9%) in the intervention arm, so leaving them out should move both arms' endline means by a
+similar small amount. The detection limit is not in the file, so the size of the shift was not computed. At
+midline (`mch_serumflag`, waves 4-6) the same pattern holds: the 7 non-detectable samples have no value, but
+there they are 1 control and 6 intervention (0.3% and 1.7%); the 25 insufficient-volume samples all have values
+(11 / 14), and the 2 with insufficient volume and hemolysis have none. Leaving the midline non-detects out
+raises the intervention arm's midline mean slightly more than control's, so if anything it understates the
+intervention's midline reduction. For mothers (`bmo_serumflag`), the 3 non-detectable samples have no value;
+the 3 insufficient-volume and the 21 "for comparison" samples have values, all in waves 2-3.
+
+**R14: explained, but not reproducible from the file.** The open file has a mother height on only 299 of 1,222
+rows (121 control, 178 intervention; the codebook also says 299 valid). The paper's Table 1 describes 392 and
+489 children. Under the graded frame 85 control and 133 intervention mothers have a height; the means by frame
+(control / intervention) are:
+
+| frame | rows | with height | mean height, cm |
+|---|---|---|---|
+| paper, Table 1 | 392 / 489 | not given | 158.10 / 157.47 |
+| graded: endline rows with LAZ | 413 / 531 | 85 / 133 | 158.63 / 157.15 |
+| graded frame, attrited households dropped | 413 / 531 | 85 / 133 | 158.63 / 157.15 |
+| graded frame, all Table 1 covariates present | 81 / 125 | 81 / 125 | 158.78 / 157.19 |
+| every row with a height (not a frame the paper uses) | 534 / 688 | 121 / 178 | 157.71 / 157.07 |
+
+Dropping attrited households changes nothing (none has an endline LAZ), and requiring every covariate moves
+control further from the paper. Every row with a height comes within 0.39 and 0.40 cm of the paper, but that is
+not a frame the paper describes, and choosing it after the fact would be fitting the answer. The likely reason
+for the miss is that the paper's height means use measurements that are not in the open file; that is a
+question for IFPRI.
+
+**R1, R2: still open.** Rows by wave (2 to 6) are 105, 85, 160, 168, 170 in the intervention arm (688) and 79,
+53, 134, 134, 134 in control (534). No row is an exact copy of another, and every row has at least one of the
+growth, serum, age or height measures. None of the columns whose names end in "id" identifies a child or
+household: they have at most 56 distinct values (`svid`, the 56 villages). Unless another column does, which
+three rows the paper's count leaves out cannot be found from the file.
 
 ## What this means
 
 The open data back the trial's published arm means and its randomisation closely. The misses are bookkeeping:
-small count differences, one Table 1 mean at the edge of tolerance, undocumented handling of non-detectable
-samples, and one mislabelled or mixed derived column. None of this was checked against the paper's adjusted
-treatment effects, which need the authors' covariate coding. The points will go to IFPRI and the authors as
-questions, not as claims of error.
+small count differences, mother heights missing from most rows of the open file, non-detectable samples left
+out rather than imputed (evenly across arms at endline), and a mother log column labelled log10 that holds the
+natural log for survey waves 4-6. None of this was checked against the paper's adjusted treatment effects,
+which need the authors' covariate coding. The points will go to IFPRI and the authors as questions, not as
+claims of error.
 
 — MV2, Munim, Inc., mv2@munimtech.com
