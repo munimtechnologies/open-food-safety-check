@@ -1,0 +1,500 @@
+{
+ "bytes": 51644,
+ "checks": [
+  {
+   "claim": "samples analysed",
+   "computed": 1255,
+   "held": true,
+   "id": "K1",
+   "reported": "1255"
+  },
+  {
+   "claim": "branded samples",
+   "computed": 695,
+   "held": true,
+   "id": "K2",
+   "reported": "695"
+  },
+  {
+   "claim": "posho samples",
+   "computed": 560,
+   "held": true,
+   "id": "K3",
+   "reported": "560"
+  },
+  {
+   "claim": "Table 2 cells by mill location (of 60)",
+   "computed": 60,
+   "held": true,
+   "id": "K4",
+   "reported": "60"
+  },
+  {
+   "claim": "% with detectable aflatoxin (>= 0.5 ppb)",
+   "computed": 94.42231075697211,
+   "held": false,
+   "id": "K5",
+   "reported": "97"
+  },
+  {
+   "claim": "% above 10 ppb",
+   "computed": 16.01593625498008,
+   "held": true,
+   "id": "K6",
+   "reported": "16"
+  },
+  {
+   "claim": "is_over_10ppb agrees with result > 10 on every row",
+   "computed": 0,
+   "held": true,
+   "id": "K7",
+   "reported": "0"
+  },
+  {
+   "claim": "mean ppb, branded",
+   "computed": 4.871516005814439,
+   "held": true,
+   "id": "K8",
+   "reported": "4.9"
+  },
+  {
+   "claim": "mean ppb, posho",
+   "computed": 9.86745471419392,
+   "held": true,
+   "id": "K9",
+   "reported": "9.9"
+  },
+  {
+   "claim": "mean ppb, national brands",
+   "computed": 2.764199772385517,
+   "held": true,
+   "id": "K10",
+   "reported": "2.8"
+  },
+  {
+   "claim": "mean ppb, regional brands",
+   "computed": 5.5753030012398375,
+   "held": true,
+   "id": "K11",
+   "reported": "5.6"
+  },
+  {
+   "claim": "mean ppb, posho from home-grown grain",
+   "computed": 7.423359352921811,
+   "held": true,
+   "id": "K12",
+   "reported": "7.4"
+  },
+  {
+   "claim": "mean ppb, posho from purchased grain",
+   "computed": 10.25709310512136,
+   "held": true,
+   "id": "K13",
+   "reported": "10.3"
+  },
+  {
+   "claim": "% above 10 ppb, branded",
+   "computed": 10.071942446043165,
+   "held": true,
+   "id": "K14",
+   "reported": "10"
+  },
+  {
+   "claim": "% above 10 ppb, national brands",
+   "computed": 2.2988505747126435,
+   "held": true,
+   "id": "K15",
+   "reported": "2"
+  },
+  {
+   "claim": "% above 10 ppb, regional brands",
+   "computed": 12.667946257197697,
+   "held": true,
+   "id": "K16",
+   "reported": "13"
+  },
+  {
+   "claim": "% above 10 ppb, posho ('approximately one in four': 22-28%)",
+   "computed": 23.392857142857142,
+   "held": true,
+   "id": "K17",
+   "reported": "22-28"
+  },
+  {
+   "claim": "lowest brand mean ppb",
+   "computed": 1.2,
+   "held": true,
+   "id": "K18",
+   "reported": "1.2"
+  },
+  {
+   "claim": "highest brand mean ppb",
+   "computed": 32.03132964082683,
+   "held": true,
+   "id": "K19",
+   "reported": "32.0"
+  },
+  {
+   "claim": "Kajiado branded: more than 41% above 10 ppb, all one brand",
+   "computed": [
+    41.1764705882353,
+    [
+     60
+    ]
+   ],
+   "held": true,
+   "id": "K20",
+   "reported": ">41, 1 brand"
+  },
+  {
+   "claim": "rounds 5-6 mean ppb, packaged",
+   "computed": 3.1332115739386683,
+   "held": true,
+   "id": "K21",
+   "reported": "3.1"
+  },
+  {
+   "claim": "rounds 5-6 % above 10 ppb, packaged",
+   "computed": 5.327868852459017,
+   "held": true,
+   "id": "K22",
+   "reported": "5.3"
+  },
+  {
+   "claim": "rounds 5-6 mean ppb, more refined posho",
+   "computed": 3.3334217515294062,
+   "held": true,
+   "id": "K23",
+   "reported": "3.3"
+  },
+  {
+   "claim": "rounds 5-6 % above 10 ppb, more refined posho",
+   "computed": 8.045977011494253,
+   "held": true,
+   "id": "K24",
+   "reported": "8.0"
+  },
+  {
+   "claim": "rounds 5-6 mean ppb, less refined posho",
+   "computed": 5.9474031886746594,
+   "held": true,
+   "id": "K25",
+   "reported": "5.9"
+  },
+  {
+   "claim": "rounds 5-6 % above 10 ppb, less refined posho",
+   "computed": 13.761467889908257,
+   "held": true,
+   "id": "K26",
+   "reported": "13.8"
+  },
+  {
+   "claim": "highest round mean is June (round 3) for branded and for posho",
+   "computed": [
+    3,
+    3
+   ],
+   "held": true,
+   "id": "K27",
+   "reported": "3, 3"
+  },
+  {
+   "claim": "lowest round mean is October or December (round 5 or 6) for branded and for posho",
+   "computed": [
+    6,
+    6
+   ],
+   "held": true,
+   "id": "K28",
+   "reported": "5|6, 5|6"
+  },
+  {
+   "claim": "abstract: lowest in December (round 6), all samples pooled",
+   "computed": 6,
+   "held": true,
+   "id": "K29",
+   "reported": "6"
+  }
+ ],
+ "columns": [
+  "brand_id",
+  "detail_cat",
+  "grade_cat",
+  "is_over_10ppb",
+  "is_posho",
+  "location_mill",
+  "location_sample",
+  "result",
+  "round",
+  "sample_cat"
+ ],
+ "predictions": {
+  "P1 counts K1-K4 all hold": true,
+  "P2 at least 24 of 29 checks hold": true,
+  "P3 K7 holds": true,
+  "P4 (guess) at least one of K8-K26 fails": false,
+  "n_checks": 29,
+  "n_held": 28
+ },
+ "sha256": "3d6dc864040d715d313d5400801709b31b68c869895a56487cce5aa5c0871ada",
+ "source_url": "https://dataverse.harvard.edu/api/access/datafile/11717966",
+ "stats": {
+  "below_lod_values": [
+   0.0,
+   0.0241622037263106,
+   0.0625126831924762,
+   0.1495393818718884,
+   0.199274150208216,
+   0.2,
+   0.2381583657741018,
+   0.2794492718878253,
+   0.3,
+   0.3010626597460312,
+   0.3532110585018154,
+   0.3579643578462197,
+   0.3677562601611259,
+   0.369453090498106,
+   0.4,
+   0.4038967159096871,
+   0.4666390632028166,
+   0.4708591888929071,
+   0.4927984338132221
+  ],
+  "brand_mean_max": 32.03132964082683,
+  "brand_mean_max_n3": 32.03132964082683,
+  "brand_mean_min": 1.2,
+  "brand_mean_min_n3": 1.2439662798808124,
+  "flag_disagreements": 0,
+  "flag_missing": 0,
+  "kajiado_branded_brands": [
+   60
+  ],
+  "kajiado_branded_n": 17,
+  "kajiado_branded_n_over": 7,
+  "kajiado_branded_pct_over": 41.1764705882353,
+  "late_mean_less_refined": 5.9474031886746594,
+  "late_mean_more_refined": 3.3334217515294062,
+  "late_mean_packaged": 3.1332115739386683,
+  "late_n_less_refined": 109,
+  "late_n_more_refined": 87,
+  "late_n_packaged": 244,
+  "late_pct_over_less_refined": 13.761467889908257,
+  "late_pct_over_more_refined": 8.045977011494253,
+  "late_pct_over_packaged": 5.327868852459017,
+  "max_result": 166.0,
+  "mean_branded": 4.871516005814439,
+  "mean_homegrown": 7.423359352921811,
+  "mean_national": 2.764199772385517,
+  "mean_posho": 9.86745471419392,
+  "mean_purchased": 10.25709310512136,
+  "mean_regional": 5.5753030012398375,
+  "min_result": 0.0,
+  "n_analysed": 1255,
+  "n_below_lod": 70,
+  "n_branded": 695,
+  "n_brands": 43,
+  "n_over_20": 111,
+  "n_posho": 560,
+  "n_result_exactly_10": 4,
+  "n_result_missing": 122,
+  "n_rows": 1377,
+  "pct_above_zero": 96.97211155378486,
+  "pct_detectable": 94.42231075697211,
+  "pct_over_10": 16.01593625498008,
+  "pct_over_branded": 10.071942446043165,
+  "pct_over_national": 2.2988505747126435,
+  "pct_over_posho": 23.392857142857142,
+  "pct_over_regional": 12.667946257197697,
+  "round_means_all": {
+   "1": 8.006122448979593,
+   "2": 7.833962264150943,
+   "3": 13.223350253807107,
+   "4": 6.541428571428572,
+   "5": 4.827403641694704,
+   "6": 2.938258626645204
+  },
+  "round_means_branded": {
+   "1": 5.669421487603306,
+   "2": 4.799130434782609,
+   "3": 8.083653846153847,
+   "4": 4.8882882882882885,
+   "5": 3.3462967310309764,
+   "6": 2.9369047756725264
+  },
+  "round_means_posho": {
+   "1": 11.776,
+   "2": 11.431958762886598,
+   "3": 18.970967741935482,
+   "4": 8.394949494949495,
+   "5": 6.560298727171265,
+   "6": 2.940049658661142
+  },
+  "table2": {
+   "1": [
+    95,
+    0,
+    95,
+    60,
+    55,
+    5
+   ],
+   "2": [
+    17,
+    0,
+    17,
+    57,
+    30,
+    27
+   ],
+   "3": [
+    47,
+    0,
+    47,
+    53,
+    41,
+    12
+   ],
+   "4": [
+    48,
+    0,
+    48,
+    58,
+    48,
+    10
+   ],
+   "5": [
+    66,
+    0,
+    66,
+    57,
+    53,
+    4
+   ],
+   "6": [
+    53,
+    30,
+    23,
+    59,
+    54,
+    5
+   ],
+   "7": [
+    138,
+    30,
+    108,
+    48,
+    48,
+    0
+   ],
+   "8": [
+    45,
+    27,
+    18,
+    60,
+    55,
+    5
+   ],
+   "9": [
+    33,
+    0,
+    33,
+    55,
+    50,
+    5
+   ],
+   "10": [
+    153,
+    87,
+    66,
+    53,
+    49,
+    4
+   ]
+  },
+  "table2_by_sample_location": {
+   "1": [
+    84,
+    6,
+    78,
+    60,
+    55,
+    5
+   ],
+   "2": [
+    107,
+    36,
+    71,
+    57,
+    30,
+    27
+   ],
+   "3": [
+    71,
+    22,
+    49,
+    53,
+    41,
+    12
+   ],
+   "4": [
+    83,
+    6,
+    77,
+    58,
+    48,
+    10
+   ],
+   "5": [
+    79,
+    6,
+    73,
+    57,
+    53,
+    4
+   ],
+   "6": [
+    41,
+    23,
+    18,
+    59,
+    54,
+    5
+   ],
+   "7": [
+    61,
+    12,
+    49,
+    48,
+    48,
+    0
+   ],
+   "8": [
+    43,
+    23,
+    20,
+    60,
+    55,
+    5
+   ],
+   "9": [
+    63,
+    22,
+    41,
+    55,
+    50,
+    5
+   ],
+   "10": [
+    63,
+    18,
+    45,
+    53,
+    49,
+    4
+   ]
+  },
+  "table2_by_sample_location_n_no_location": 0,
+  "table2_n_no_location": 0
+ },
+ "version": "0.1.0"
+}

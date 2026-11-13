@@ -1,7 +1,7 @@
 # Candidate datasets for open-food-safety-check
 
-Last updated: 2026-11-12 (third scouting pass: Zenodo and Dryad; later the same day, an anonymous download route
-for the wheat DON paper's supplement). Text licence: CC BY 4.0.
+Last updated: 2026-11-13 (two of the three pre-registered checks graded; the scouting notes below are unchanged
+since the third scouting pass of 2026-11-12). Text licence: CC BY 4.0.
 
 This page lists every paper-and-data pair considered for a check in this repository, including the
 ones that were not used and why. A check is only run when (1) the data are openly downloadable without
@@ -13,9 +13,9 @@ paper and the codebook before any data values are read.
 
 | Check | Paper | Data | Licence | Status |
 |---|---|---|---|---|
-| kenya-aflatoxin 0.1.0 | Hoffmann, Ndisio, Barasa, Okoth, Murphy 2025, PLOS ONE 20(11) e0336687 | IFPRI, doi:10.7910/DVN/XGNOD4 | CC BY 4.0 | pre-registered, job queued |
+| kenya-aflatoxin 0.1.0 | Hoffmann, Ndisio, Barasa, Okoth, Murphy 2025, PLOS ONE 20(11) e0336687 | IFPRI, doi:10.7910/DVN/XGNOD4 | CC BY 4.0 | graded 2026-11-13: 28 of 29 held ([result](kenya-aflatoxin-0.1.0-result.md)) |
 | senegal-groundnut 0.1.0 | Feed the Future Innovation Lab for Food Safety post (Purdue) | Bauchet et al., doi:10.7910/DVN/ACKHW5 | CC0 | pre-registered, job queued |
-| kenya-aflatoxin-rct 0.1.0 | Hoffmann, Jones, Leroy 2018, BMJ Global Health 3(6) e000983 | IFPRI, doi:10.7910/DVN/OHIOYR | CC BY 4.0 | pre-registered, job queued |
+| kenya-aflatoxin-rct 0.1.0 | Hoffmann, Jones, Leroy 2018, BMJ Global Health 3(6) e000983 | IFPRI, doi:10.7910/DVN/OHIOYR | CC BY 4.0 | graded 2026-11-13: 20 of 25 held ([result](kenya-aflatoxin-rct-0.1.0-result.md)) |
 
 ## Shortlisted (no check until the three above are graded)
 

@@ -1,0 +1,540 @@
+{
+ "bytes": 1700478,
+ "checks": [
+  {
+   "claim": "687 intervention children enrolled (rows with treatment = 1)",
+   "computed": 688,
+   "held": false,
+   "id": "R1",
+   "reported": 687
+  },
+  {
+   "claim": "control children enrolled: 532 (paper) or 536 (dataset description)",
+   "computed": 534,
+   "held": false,
+   "id": "R2",
+   "reported": [
+    532,
+    536
+   ]
+  },
+  {
+   "claim": "56 villages, 28 per arm, one arm per village",
+   "computed": [
+    56,
+    28,
+    28,
+    0
+   ],
+   "held": true,
+   "id": "R3",
+   "reported": [
+    56,
+    28,
+    28,
+    0
+   ]
+  },
+  {
+   "claim": "lost to follow-up at endline: 148 intervention, 118 control (eattrited = 1)",
+   "computed": [
+    148,
+    118
+   ],
+   "held": true,
+   "id": "R4",
+   "reported": [
+    148,
+    118
+   ]
+  },
+  {
+   "claim": "endline LAZ mean, intervention / control (within 0.06)",
+   "computed": [
+    -1.6900941619585688,
+    -1.6005084745762712
+   ],
+   "held": true,
+   "id": "R5",
+   "reported": [
+    -1.68,
+    -1.59
+   ]
+  },
+  {
+   "claim": "endline stunting %, intervention / control (within 3 points)",
+   "computed": [
+    39.92467043314501,
+    35.351089588377725
+   ],
+   "held": true,
+   "id": "R6",
+   "reported": [
+    39.26,
+    35.71
+   ]
+  },
+  {
+   "claim": "endline ln serum AFB1-lysine mean (within 0.10)",
+   "computed": [
+    1.7829856299250162,
+    2.0161143024368164
+   ],
+   "held": true,
+   "id": "R7",
+   "reported": [
+    1.78,
+    2.01
+   ]
+  },
+  {
+   "claim": "endline serum AFB1-lysine mean, pg/mg albumin (within 12%)",
+   "computed": [
+    14.555447122985493,
+    21.54658813062691
+   ],
+   "held": true,
+   "id": "R8",
+   "reported": [
+    14.79,
+    22.19
+   ]
+  },
+  {
+   "claim": "pooled endline serum AFB1-lysine median 6.1 pg/mg (within 0.4)",
+   "computed": 6.191336483448433,
+   "held": true,
+   "id": "R9",
+   "reported": 6.1
+  },
+  {
+   "claim": "midline LAZ mean (within 0.06)",
+   "computed": [
+    -1.2185529715762273,
+    -1.3186666666666667
+   ],
+   "held": true,
+   "id": "R10",
+   "reported": [
+    -1.17,
+    -1.32
+   ]
+  },
+  {
+   "claim": "midline stunting % (within 3 points)",
+   "computed": [
+    21.44702842377261,
+    26.349206349206348
+   ],
+   "held": true,
+   "id": "R11",
+   "reported": [
+    20.0,
+    26.57
+   ]
+  },
+  {
+   "claim": "midline ln serum AFB1-lysine mean (within 0.10)",
+   "computed": [
+    1.535450130903917,
+    1.6604962779364765
+   ],
+   "held": true,
+   "id": "R12",
+   "reported": [
+    1.54,
+    1.6
+   ]
+  },
+  {
+   "claim": "midline serum AFB1-lysine mean, pg/mg (within 12%)",
+   "computed": [
+    10.023249566544258,
+    16.689631362665185
+   ],
+   "held": true,
+   "id": "R13",
+   "reported": [
+    9.83,
+    16.12
+   ]
+  },
+  {
+   "claim": "Table 1 mother height, cm (within 0.4)",
+   "computed": [
+    157.14511278195488,
+    158.6305882352941
+   ],
+   "held": false,
+   "id": "R14",
+   "reported": [
+    157.47,
+    158.1
+   ]
+  },
+  {
+   "claim": "Table 1 mother age, years (within 0.4)",
+   "computed": [
+    25.487758945386066,
+    25.537530266343826
+   ],
+   "held": true,
+   "id": "R15",
+   "reported": [
+    25.74,
+    25.7
+   ]
+  },
+  {
+   "claim": "Table 1 mother education %, 3 categories (within 3 points)",
+   "computed": [
+    [
+     53.96518375241779,
+     29.78723404255319,
+     16.247582205029012
+    ],
+    [
+     51.22549019607843,
+     30.147058823529413,
+     18.627450980392158
+    ]
+   ],
+   "held": true,
+   "id": "R16",
+   "reported": [
+    [
+     54.81,
+     29.04,
+     16.16
+    ],
+    [
+     52.3,
+     30.1,
+     17.6
+    ]
+   ]
+  },
+  {
+   "claim": "Table 1 mother ln serum AFB1-lysine (within 0.10)",
+   "computed": [
+    2.6158682288288198,
+    2.6576799375832603
+   ],
+   "held": true,
+   "id": "R17",
+   "reported": [
+    2.69,
+    2.74
+   ]
+  },
+  {
+   "claim": "Table 1 child endline age, months (within 0.25)",
+   "computed": [
+    22.128516572118006,
+    22.090120369311546
+   ],
+   "held": true,
+   "id": "R18",
+   "reported": [
+    22.13,
+    22.02
+   ]
+  },
+  {
+   "claim": "Table 1 child male % (within 3 points)",
+   "computed": [
+    50.847457627118644,
+    51.573849878934624
+   ],
+   "held": true,
+   "id": "R19",
+   "reported": [
+    51.12,
+    51.79
+   ]
+  },
+  {
+   "claim": "Table 1 HFIAS food-security %, 4 categories (within 3 points)",
+   "computed": [
+    [
+     18.975332068311197,
+     13.851992409867172,
+     37.381404174573056,
+     29.79127134724858
+    ],
+    [
+     17.961165048543688,
+     13.349514563106796,
+     36.407766990291265,
+     32.28155339805825
+    ]
+   ],
+   "held": true,
+   "id": "R20",
+   "reported": [
+    [
+     19.02,
+     14.31,
+     37.63,
+     29.04
+    ],
+    [
+     17.35,
+     13.52,
+     36.48,
+     32.65
+    ]
+   ]
+  },
+  {
+   "claim": "Table 1 household-head education %, 3 categories (within 3 points)",
+   "computed": [
+    [
+     57.333333333333336,
+     27.428571428571427,
+     15.238095238095237
+    ],
+    [
+     51.96078431372549,
+     26.96078431372549,
+     21.07843137254902
+    ]
+   ],
+   "held": true,
+   "id": "R21",
+   "reported": [
+    [
+     56.85,
+     27.81,
+     15.34
+    ],
+    [
+     51.79,
+     26.79,
+     21.43
+    ]
+   ]
+  },
+  {
+   "claim": "adduct detectable in all endline child samples (no non-detectable flag, no value <= 0)",
+   "computed": [
+    17,
+    0,
+    860
+   ],
+   "held": false,
+   "id": "R22",
+   "reported": [
+    0,
+    0
+   ]
+  },
+  {
+   "claim": "log10 serum columns equal log10 of the serum values (within 0.01)",
+   "computed": [
+    885,
+    2709
+   ],
+   "held": false,
+   "id": "R23",
+   "reported": 0
+  },
+  {
+   "claim": "stunted flag = (height-for-age z < -2) on every row with both",
+   "computed": [
+    0,
+    1646
+   ],
+   "held": true,
+   "id": "R24",
+   "reported": 0
+  },
+  {
+   "claim": "midline values only in waves 4-6, and wave456 agrees with wave",
+   "computed": [
+    0,
+    0
+   ],
+   "held": true,
+   "id": "R25",
+   "reported": [
+    0,
+    0
+   ]
+  }
+ ],
+ "n_columns": 243,
+ "predictions": {
+  "P1 R1 and R3 hold": false,
+  "P2 R23-R25 all hold": false,
+  "P3 at least 13 of the 17 descriptive checks R5-R21 hold": true,
+  "P4 (guess) at least one of R2, R4 fails": true,
+  "P5 R22 holds": false,
+  "n_checks": 25,
+  "n_descriptive_held": 16,
+  "n_held": 20
+ },
+ "sha256": "d48ac94dc165930f2ec2dff546b31b9abc70ee28155a767ffe781a3b0504defe",
+ "source_url": "https://dataverse.harvard.edu/api/access/datafile/3347337",
+ "stats": {
+  "afb_mean_end_c": 21.54658813062691,
+  "afb_mean_end_t": 14.555447122985493,
+  "afb_mean_mid_c": 16.689631362665185,
+  "afb_mean_mid_t": 10.023249566544258,
+  "afb_median_end": 6.191336483448433,
+  "afb_median_mid": 4.323639226866066,
+  "afb_sd_end_c": 56.442827268150964,
+  "afb_sd_end_t": 29.34829163041754,
+  "afb_sd_mid_c": 67.78409101505268,
+  "afb_sd_mid_t": 19.138371282741975,
+  "ch_age_mean_c": 22.090120369311546,
+  "ch_age_mean_t": 22.128516572118006,
+  "end_serum_min": 0.405125222883992,
+  "end_serumflag_counts": {
+   "1": 17,
+   "2": 4,
+   "3": 1
+  },
+  "head_edu3_pct_c": [
+   51.96078431372549,
+   26.96078431372549,
+   21.07843137254902
+  ],
+  "head_edu3_pct_t": [
+   57.333333333333336,
+   27.428571428571427,
+   15.238095238095237
+  ],
+  "hfias_pct_c": [
+   17.961165048543688,
+   13.349514563106796,
+   36.407766990291265,
+   32.28155339805825
+  ],
+  "hfias_pct_t": [
+   18.975332068311197,
+   13.851992409867172,
+   37.381404174573056,
+   29.79127134724858
+  ],
+  "laz_mean_end_c": -1.6005084745762712,
+  "laz_mean_end_t": -1.6900941619585688,
+  "laz_mean_mid_c": -1.3186666666666667,
+  "laz_mean_mid_t": -1.2185529715762273,
+  "laz_sd_end_c": 1.2606609389371861,
+  "laz_sd_end_t": 1.0876244628771787,
+  "laz_sd_mid_c": 1.2287503879647677,
+  "laz_sd_mid_t": 1.1294136101343435,
+  "ln_afb_mean_end_c": 2.0161143024368164,
+  "ln_afb_mean_end_t": 1.7829856299250162,
+  "ln_afb_mean_mid_c": 1.6604962779364765,
+  "ln_afb_mean_mid_t": 1.535450130903917,
+  "ln_afb_mean_unflagged_end_c": 2.0171893925190165,
+  "ln_afb_mean_unflagged_end_t": 1.782680402818319,
+  "ln_afb_mean_unflagged_mid_c": 1.6665890399291208,
+  "ln_afb_mean_unflagged_mid_t": 1.5349420677113357,
+  "ln_afb_sd_end_c": 1.3474057361351726,
+  "ln_afb_sd_end_t": 1.2746468774404276,
+  "ln_afb_sd_mid_c": 1.2275500767077983,
+  "ln_afb_sd_mid_t": 1.1822273336574656,
+  "log10_afb_mean_end_c": 0.8755873164345334,
+  "log10_afb_mean_end_t": 0.7743408203892279,
+  "log10_afb_mean_mid_c": 0.7211443707287001,
+  "log10_afb_mean_mid_t": 0.6668375190891969,
+  "log_checked_bmo": 1206,
+  "log_checked_ech": 860,
+  "log_checked_mch": 643,
+  "log_mismatched_bmo": 885,
+  "log_mismatched_ech": 0,
+  "log_mismatched_mch": 0,
+  "mo_age_mean_c": 25.537530266343826,
+  "mo_age_mean_t": 25.487758945386066,
+  "mo_edu3_pct_c": [
+   51.22549019607843,
+   30.147058823529413,
+   18.627450980392158
+  ],
+  "mo_edu3_pct_t": [
+   53.96518375241779,
+   29.78723404255319,
+   16.247582205029012
+  ],
+  "mo_height_mean_c": 158.6305882352941,
+  "mo_height_mean_t": 157.14511278195488,
+  "mo_ln_afb_mean_c": 2.6576799375832603,
+  "mo_ln_afb_mean_t": 2.6158682288288198,
+  "n_afb_end_c": 383,
+  "n_afb_end_t": 477,
+  "n_afb_mid_c": 289,
+  "n_afb_mid_t": 354,
+  "n_afb_nonpositive_end_c": 0,
+  "n_afb_nonpositive_end_t": 0,
+  "n_afb_nonpositive_mid_c": 0,
+  "n_afb_nonpositive_mid_t": 0,
+  "n_afb_unflagged_end_c": 382,
+  "n_afb_unflagged_end_t": 474,
+  "n_afb_unflagged_mid_c": 278,
+  "n_afb_unflagged_mid_t": 340,
+  "n_arm_missing": 0,
+  "n_complete_covariates_c": 81,
+  "n_complete_covariates_t": 125,
+  "n_control": 534,
+  "n_eattrited_c": 118,
+  "n_eattrited_t": 148,
+  "n_end_serum_nondetect_flag": 17,
+  "n_end_serum_nonpositive": 0,
+  "n_end_serum_rows": 860,
+  "n_endline_frame": 1222,
+  "n_laz_abs_gt6_end_c": 0,
+  "n_laz_abs_gt6_end_t": 0,
+  "n_laz_abs_gt6_mid_c": 0,
+  "n_laz_abs_gt6_mid_t": 0,
+  "n_laz_end_c": 413,
+  "n_laz_end_t": 531,
+  "n_laz_mid_c": 315,
+  "n_laz_mid_t": 387,
+  "n_mattrited_c": 75,
+  "n_mattrited_t": 94,
+  "n_midline_frame": 900,
+  "n_midline_values_outside_waves": 0,
+  "n_mo_afb_c": 409,
+  "n_mo_afb_t": 523,
+  "n_rows": 1222,
+  "n_stunted_rows_end_c": 413,
+  "n_stunted_rows_end_t": 531,
+  "n_stunted_rows_mid_c": 315,
+  "n_stunted_rows_mid_t": 387,
+  "n_table1_c": 413,
+  "n_table1_t": 531,
+  "n_treatment": 688,
+  "n_villages": 56,
+  "n_villages_c": 28,
+  "n_villages_mixed": 0,
+  "n_villages_t": 28,
+  "n_wave456_disagree": 0,
+  "pct_laz_below_cut_end_c": 35.351089588377725,
+  "pct_laz_below_cut_end_t": 39.92467043314501,
+  "pct_laz_below_cut_mid_c": 26.349206349206348,
+  "pct_laz_below_cut_mid_t": 21.44702842377261,
+  "pct_male_c": 51.573849878934624,
+  "pct_male_t": 50.847457627118644,
+  "pct_stunted_end_c": 35.351089588377725,
+  "pct_stunted_end_t": 39.92467043314501,
+  "pct_stunted_mid_c": 26.349206349206348,
+  "pct_stunted_mid_t": 21.44702842377261,
+  "stunt_checked_ech": 944,
+  "stunt_checked_mch": 702,
+  "stunt_mismatch_haz_ech": [],
+  "stunt_mismatch_haz_mch": [],
+  "stunt_mismatched_ech": 0,
+  "stunt_mismatched_mch": 0,
+  "wave_counts": {
+   "2": 184,
+   "3": 138,
+   "4": 294,
+   "5": 302,
+   "6": 304
+  }
+ },
+ "version": "0.1.0"
+}
