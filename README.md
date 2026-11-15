@@ -13,8 +13,12 @@ Anything looked at after grading is labelled post hoc and never changes a grade.
 | check | survey | data | status |
 |---|---|---|---|
 | [kenya-aflatoxin 0.1.0](docs/kenya-aflatoxin-0.1.0.md) | Hoffmann et al. 2025, PLOS ONE 20(11): e0336687: aflatoxin in 1,255 maize-flour samples, ten Kenyan towns, 2021 | IFPRI, [doi:10.7910/DVN/XGNOD4](https://doi.org/10.7910/DVN/XGNOD4) (CC BY 4.0) | **graded 2026-11-13: 28 of 29 held** ([result](docs/kenya-aflatoxin-0.1.0-result.md)) |
-| [senegal-groundnut 0.1.0](docs/senegal-groundnut-0.1.0.md) | Feed the Future Food Safety Innovation Lab (Purdue, ISRA) pilot: aflatoxins, coliforms and Enterobacteriaceae in groundnuts stored by 250 households, Peanut Basin, Senegal, 2020 | Bauchet 2021, [doi:10.7910/DVN/ACKHW5](https://doi.org/10.7910/DVN/ACKHW5) (CC0 1.0) | pre-registered 2026-11-11, 12 checks; job waiting for compute |
+| [senegal-groundnut 0.1.0](docs/senegal-groundnut-0.1.0.md) | Feed the Future Food Safety Innovation Lab (Purdue, ISRA) pilot: aflatoxins, coliforms and Enterobacteriaceae in groundnuts stored by 250 households, Peanut Basin, Senegal, 2020 | Bauchet 2021, [doi:10.7910/DVN/ACKHW5](https://doi.org/10.7910/DVN/ACKHW5) (CC0 1.0) | **graded 2026-11-15: 5 of 12 held** ([result](docs/senegal-groundnut-0.1.0-result.md)); post hoc: the file has two aflatoxin samples per household, and counted per sample both aflatoxin shares reproduce exactly |
 | [kenya-aflatoxin-rct 0.1.0](docs/kenya-aflatoxin-rct-0.1.0.md) | Hoffmann, Jones and Leroy 2018, BMJ Global Health 3(6): e000983: cluster randomised trial of aflatoxin-free maize and child growth, 56 villages, Meru and Tharaka-Nithi, 2013-2016 | IFPRI 2019, [doi:10.7910/DVN/OHIOYR](https://doi.org/10.7910/DVN/OHIOYR) (CC BY 4.0) | **graded 2026-11-13: 20 of 25 held** ([result](docs/kenya-aflatoxin-rct-0.1.0-result.md)); post hoc diagnostics added: the mother "log10" serum column holds the natural log in waves 4-6 |
+
+All three pre-registered checks are now graded: 53 of 66 checks held. Most misses so far come down to
+definitions (which readings count as "detectable", which unit a share is counted over); the rest are small
+labelling or entry slips in the files (a log column, censoring codes, a few colony averages).
 
 The job outputs behind each graded result (every statistic, check and prediction) are in [results/](results/).
 Post hoc diagnostic code is in [posthoc/](posthoc/). Every paper-and-data pair considered for a check,
@@ -25,7 +29,7 @@ Run: `python -m unittest -v test_kenya_aflatoxin test_senegal_groundnut test_ken
 `python kenya_aflatoxin_rct.py --out-dir out` (Python 3.10+, standard library only). Post hoc: from
 `posthoc/`, `python -m unittest -v test_posthoc_rct` then `python posthoc_rct.py --out-dir out`.
 
-Related: 75 checked items in Canada's open food-chemistry data, in
+Related: 86 checked items in Canada's open food-chemistry data, in
 [munimtechnologies/spice-lead-recalls](https://github.com/munimtechnologies/spice-lead-recalls).
 
 IFPRI bears no responsibility for the analyses or interpretations of the data presented here.

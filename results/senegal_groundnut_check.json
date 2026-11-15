@@ -1,0 +1,235 @@
+{
+ "bytes": 959795,
+ "checks": [
+  {
+   "claim": "250 households surveyed (households in the file, or households with consent = 1)",
+   "computed": [
+    250,
+    250
+   ],
+   "held": true,
+   "id": "S1",
+   "reported": "250"
+  },
+  {
+   "claim": "% of producers who knew of aflatoxins (aflx_heard = 1)",
+   "computed": 20.0,
+   "held": true,
+   "id": "S2",
+   "reported": "20"
+  },
+  {
+   "claim": "% who knew about bacterial contamination before the study (bac_heard = 1)",
+   "computed": 22.040816326530614,
+   "held": true,
+   "id": "S3",
+   "reported": "22"
+  },
+  {
+   "claim": "% of samples below the EU limit of 4 ppb (aflatoxin < 4)",
+   "computed": 85.54913294797687,
+   "held": false,
+   "id": "S4",
+   "reported": "87"
+  },
+  {
+   "claim": "% of samples above 100 ppb (aflatoxin at the 100 ppb censoring value)",
+   "computed": 9.826589595375722,
+   "held": false,
+   "id": "S5",
+   "reported": "8"
+  },
+  {
+   "claim": "% of samples with coliforms above 1 log CFU/g",
+   "computed": 96.73913043478261,
+   "held": true,
+   "id": "S6",
+   "reported": "97"
+  },
+  {
+   "claim": "% of samples with Enterobacteriaceae above 1 log CFU/g",
+   "computed": 95.1086956521739,
+   "held": false,
+   "id": "S7",
+   "reported": "94.5"
+  },
+  {
+   "claim": "% of households consuming raw groundnuts (prod_consall__1 = 1)",
+   "computed": 7.5829383886255926,
+   "held": false,
+   "id": "S8",
+   "reported": "7"
+  },
+  {
+   "claim": "every aflatoxin value lies in 0-100 ppb (censoring as documented)",
+   "computed": 25,
+   "held": false,
+   "id": "S9",
+   "reported": "0"
+  },
+  {
+   "claim": "log10 CFU/g columns equal log10 of the CFU/g columns (within 0.01) on every row with CFU/g > 0",
+   "computed": [
+    0,
+    537
+   ],
+   "held": true,
+   "id": "S10",
+   "reported": "0"
+  },
+  {
+   "claim": "average colony count = mean of the two plates (within 0.5) on every row with both plates",
+   "computed": [
+    5,
+    552
+   ],
+   "held": false,
+   "id": "S11",
+   "reported": "0"
+  },
+  {
+   "claim": "no household has two different values of any lab result",
+   "computed": 129,
+   "held": false,
+   "id": "S12",
+   "reported": "0"
+  }
+ ],
+ "n_columns": 719,
+ "predictions": {
+  "P1 S1 holds": true,
+  "P2 at least 9 of 12 checks hold": false,
+  "P3 S9-S12 all hold": false,
+  "P4 (guess) at least one of S4-S7 fails": true,
+  "n_checks": 12,
+  "n_held": 5
+ },
+ "sha256": "c7a8c385513f4429c0274bd92b9029a79d3c2578664549c94a7796aef6a713bb",
+ "source_url": "https://dataverse.harvard.edu/api/access/datafile/4880423",
+ "stats": {
+  "afla_max": 101.0,
+  "afla_median": 1.6,
+  "afla_min": 0.3,
+  "afla_out_of_range_rows": 25,
+  "afla_smallest_values": [
+   0.3,
+   0.5,
+   0.7,
+   0.8,
+   0.9,
+   1.0,
+   1.1,
+   1.2,
+   1.3,
+   1.4,
+   1.5,
+   1.6,
+   1.7,
+   1.8,
+   1.9
+  ],
+  "avg_checked_coli": 184,
+  "avg_checked_eb": 184,
+  "avg_checked_mold": 184,
+  "avg_mismatched_coli": 0,
+  "avg_mismatched_eb": 1,
+  "avg_mismatched_mold": 4,
+  "cfug_per_average_count_coli": [
+   40.0,
+   400.0
+  ],
+  "cfug_per_average_count_eb": [
+   4.0,
+   40.0,
+   400.0
+  ],
+  "cfug_per_average_count_mold": [
+   40.0,
+   400.0
+  ],
+  "lab_conflicts": {
+   "aflatoxin": 129,
+   "cfug_coli": 0,
+   "cfug_eb": 0,
+   "cfug_mold": 0,
+   "log10cfug_coli": 0,
+   "log10cfug_eb": 0,
+   "log10cfug_mold": 0
+  },
+  "log_checked_coli": 178,
+  "log_checked_eb": 176,
+  "log_checked_mold": 183,
+  "log_mismatched_coli": 0,
+  "log_mismatched_eb": 0,
+  "log_mismatched_mold": 0,
+  "log_values_when_cfug_zero_coli": [
+   0.0
+  ],
+  "log_values_when_cfug_zero_eb": [
+   0.0
+  ],
+  "log_values_when_cfug_zero_mold": [
+   0.0
+  ],
+  "median_log_coli": 3.5898792,
+  "median_log_eb": 3.81888485,
+  "median_log_mold": 3.7992859,
+  "n_afla_zero": 0,
+  "n_aflatoxin": 173,
+  "n_aflx_heard": 250,
+  "n_bac_heard": 245,
+  "n_cfug_coli": 184,
+  "n_cfug_eb": 184,
+  "n_cfug_mold": 184,
+  "n_cfug_zero_coli": 6,
+  "n_cfug_zero_eb": 8,
+  "n_cfug_zero_mold": 1,
+  "n_consent1": 250,
+  "n_households": 250,
+  "n_log_coli": 184,
+  "n_log_eb": 184,
+  "n_log_mold": 184,
+  "n_negative_aflatoxin": 0,
+  "n_negative_aflx_heard": 0,
+  "n_negative_bac_heard": 5,
+  "n_negative_prod_consall__1": 0,
+  "n_prod_consall__1": 211,
+  "n_rows": 677,
+  "pct_afla_ge100": 9.826589595375722,
+  "pct_afla_gt10": 10.982658959537572,
+  "pct_afla_gt100": 9.826589595375722,
+  "pct_afla_gt20": 10.982658959537572,
+  "pct_afla_le4": 86.70520231213872,
+  "pct_afla_lt4": 85.54913294797687,
+  "pct_aflx_heard": 20.0,
+  "pct_all_households_aflx_heard": 20.0,
+  "pct_all_households_bac_heard": 21.6,
+  "pct_all_households_prod_consall__1": 6.4,
+  "pct_bac_heard": 22.040816326530614,
+  "pct_cfug_gt10_coli": 96.73913043478261,
+  "pct_cfug_gt10_eb": 95.1086956521739,
+  "pct_cfug_gt10_mold": 99.45652173913044,
+  "pct_log_ge1_coli": 96.73913043478261,
+  "pct_log_ge1_eb": 95.1086956521739,
+  "pct_log_ge1_mold": 99.45652173913044,
+  "pct_log_gt1_coli": 96.73913043478261,
+  "pct_log_gt1_eb": 95.1086956521739,
+  "pct_log_gt1_mold": 99.45652173913044,
+  "pct_prod_consall__1": 7.5829383886255926,
+  "rows_per_household_max": 3,
+  "values_aflx_heard": [
+   0.0,
+   1.0
+  ],
+  "values_bac_heard": [
+   -888.0,
+   0.0,
+   1.0
+  ],
+  "values_prod_consall__1": [
+   0.0,
+   1.0
+  ]
+ },
+ "version": "0.1.0"
+}
