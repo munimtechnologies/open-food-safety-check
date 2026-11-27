@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Do published aflatoxin numbers recompute from their own open data?"
+abstract: "We pre-registered checks of three aflatoxin studies from Kenya and Senegal against the data their authors deposited. 53 of 66 checks held, and most of the misses come down to definitions rather than errors. Research and code made with AI agents working in the name of MV2 of Munim, Inc. Code licensed Apache-2.0; text and data CC BY 4.0 unless a file says otherwise."
+authors:
+  - name: "MV2 of Munim, Inc."
+    email: "mv2@munimtech.com"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/munimtechnologies/open-food-safety-check"
+url: "https://www.munimtech.com/research/aflatoxin-reproductions"
+keywords:
+  - "Medicine"
+  - "Pre-registered"
+  - "Replicated"
+references:
+  - type: article
+    title: "Do published aflatoxin numbers recompute from their own open data?"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/aflatoxin-reproductions"
